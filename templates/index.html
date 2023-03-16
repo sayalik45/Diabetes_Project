@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Prediction</title>
+
+</head>
+<body style="background-color: aqua;">
+    <h1>Diabetes Prediction</h1>
+
+
+    <form action="/get_data" , method="post">
+
+        <label>Glucose :</label> <input type="number"  step = '0.001' name = 'html_Glucose'><br><br>
+        <label>BloodPressure :</label> <input type="number" step = '0.001' name = 'html_BloodPressure'><br><br>
+        <label>SkinThickness :</label> <input type="number" step = '0.001' name = 'html_SkinThickness'><br><br>
+        <label>Insulin : </label> <input type="number" step = '0.001' name = 'html_Insulin'><br><br>
+        <label>BMI :</label> <input type="number" step = '0.001' name = 'html_BMI'><br><br>
+        <label>DiabetesPedigreeFunction :</label> <input type="number" step = '0.001' name = "html_DiabetesPedigreeFunction"><br><br>
+        <label>Age :</label>  <input type="number" name = 'html_Age'> <br><br>
+
+    </select> <br><br>
+
+    <input type="submit" value="DIABETES PREDICTION">
+
+
+</form><br>
+<label>Diabetes Prediction : </label>{{prediction}}
